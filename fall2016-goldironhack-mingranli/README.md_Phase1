@@ -1,0 +1,63 @@
+1. Name of Application
+Find My Best Organic Food
+
+2. Keywords
+Agricultural-economics, organic, wholesale-prices, farmgate-prices, conventional
+
+3. Description of the datasets and function design
+ * "Organic Prices"; https://catalog.data.gov/dataset/organic-prices
+ * The data type of CSV and Excel are provided by the USDA National Agricultural Statistics Service. 
+ * Lots of variables, including commodity, subgroup, package, organic/ terminal, time, etc., have been provided for analyzing work. 
+ * I found this dataset from data.gov, and under the topic of "Climate".
+ * I have sketched the original idea by Sketch_Phase1.jpg.
+ 
+ * The second dataset that related to solving the problem is "Farm Programs Payments". https://catalog.data.gov/dataset/farm-programs-payments
+ * This data describes that payments made by the Department of Agriculture, Farm Service Agency to US agricultural producers 
+   participating in Farm Bill programs including commodity, price support, disaster assistance and conservation. 
+   Payments may be searched by payee, program, year, commodity, state, county, farm, payment date and amount paid.
+ 
+
+4. Brief Description
+
+ * This data set provides farmgate and wholesale prices for select organic and conventional fruits and vegetables, wholesale prices
+   for organic and conventional poultry (broilers) and eggs, as well as f.o.b. and spot prices for organic grain and feedstuffs. 
+   Prices are based on those reported by USDA Agricultural Marketing Service Market News, Organic Food Business News, and USDA 
+   National Agricultural Statistics Service. For me, the developer, I will try to figure out when and where we can buy best and
+   cheapest organic fruits and vegetables. 
+
+ * Map View:
+	1. The basic map view will be designed for presenting meaningful locations of commodity terminal transport, and also how
+	many kinds of vegetables will be packaged and transported from those places. For this dataset, the terminals focus on two 
+	sites of San Fran and Atlanta. 
+	2. Maps will be enlarged to preform and focus on showing these two terminals, including San Fran and Atlanta. 
+	3. Maps will display different price information on different commodities by timestamp filtering. 
+
+ * Data Visualization:
+	1. The mapping is the main section of the system that will be used for showing the terminal locations of commodities. 
+	2. The line graph is the second important part for displaying the price changes of one specific vegetable with one year. 
+	3. The line graph will be also available for users to choose/select one particular month to compare all the prices of
+	   all kinds of vegetables. The process still can be finished by querying, sorting and filtering. 
+	4. The line graph also allows users to highlight a specific vegetable OR month to view details.
+	5. Finally, the mark function will be applied to achieve the goal of memory, recall and comparison. 
+	
+ * Interaction Form:
+	1. I will use some operation option, including filter by month OR price, search vegetable OR fruit, marks and highlights on 
+	   vegetables and fruits, sort based on vegetables and fruits. 
+	2. Our system will provide a text field for users to fill and search the information they want. Also, the users can leave comments.
+	   Moreover, they can mark on the vegetables OR fruits for comparing. 
+	3. Users will get the information based on their searching, sorting and filtering. 
+	4. The filtering on price OR month will affect map markers. 
+	5. Users will use the functions of sorting, filtering, and highlighting to find out the specific information they want. 
+
+5. Build Case
+README.md_Phase1 --This file that provides the complete description of the project.  
+Sketch_Phase1.jpg -- Sketches of the original idea.
+Index.html --Web page for the Application.
+Style.css --CSS style file.
+Javascript --A directory contains all the Javascript files.
+Images --A directory contains all images.
+
+6. Test Case
+I will use Chrome and Firefox to test the project by most of the time. Also, if it may compatibly for every browser, that can be 
+a great thing.
+
